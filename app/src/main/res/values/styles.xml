@@ -1,0 +1,70 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryApp</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkApp</item>
+        <item name="colorAccent">@color/colorAccentApp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="btnSpinnerStyle" parent="android:Widget.Button" />
+
+    <style name="tabLayoutStyle" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabPaddingStart">3dp</item>
+        <item name="tabPaddingEnd">3dp</item>
+        <item name="tabPaddingTop">1dp</item>
+        <item name="tabPaddingBottom">1dp</item>
+        <item name="tabBackground">@color/colorTabLayout</item>
+        <item name="tabTextAppearance">@style/tabTextAppearancePrincipal</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+    </style>
+
+    <style name="tabTextAppearancePrincipal" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#ADAEB3</item>
+    </style>
+
+    <style name="tabTextAppearanceCreador" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#ADAEB3</item>
+    </style>
+
+    <style name="tabLayoutStyleCreador" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">3dp</item>
+        <item name="tabPaddingEnd">3dp</item>
+        <item name="tabPaddingTop">1dp</item>
+        <item name="tabPaddingBottom">1dp</item>
+        <item name="tabBackground">@color/colorTabLayoutCreador</item>
+        <item name="tabTextAppearance">@style/tabTextAppearanceCreador</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+    </style>
+
+    <style name="titleCollapsingToolbarLayout" parent="TextAppearance.Design.CollapsingToolbar.Expanded">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="textAppearenceBtn" parent="TextAppearance.AppCompat.Button">
+        <item name="android:fontFamily">sans-serif-bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorDarkGrey</item>
+    </style>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorWhite">#CCFFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDarkGrey">#5d5d5d</color>
+    <color name="colorLightGrey">#BDBDBD</color>
+    <color name="colorBlue">#00B8D4</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="colorPrimaryApp">#212121</color>
+    <color name="colorPrimaryDarkApp">#000000</color>
+    <color name="colorAccentApp">#84FFFF</color>
+    <color name="colorGrey">#9E9E9E</color>
+    <color name="colorTabLayout">#212121</color>
+    <color name="colorBarRadar">#424242</color>
+    <color name="colorTabLayoutCreador">#424242</color>
+</resources>

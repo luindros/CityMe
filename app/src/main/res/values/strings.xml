@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">CityMe</string>
+
+    <string name="facebook_app_id">1802752153299350</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="normal">Normal</string>
+    <string name="satelite">Satélite</string>
+    <string name="hibrido">Híbrido</string>
+    <string name="tierra">Tierra</string>
+
+    <string name="login">Entra con Facebook</string>
+    <string name="inicio">Inicio</string>
+    <string name="eventos">Eventos</string>
+    <string name="promociones">Promociones</string>
+    <string name="calendario">Calendario</string>
+    <string name="creador">Creador</string>
+    <string name="configuracion">Configuración</string>
+
+    <string name="necesaria_conexion">Necesaria conexión a internet</string>
+    <string name="error_conexion">Error de conexión. Inténtelo de nuevo</string>
+    <string name="cargando">Cargando...</string>
+    <string name="por_favor_espere">Por favor, espere...</string>
+    <string name="confirmacion">Confirmación</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="seleccionar_galeria">Seleccionar de la galería</string>
+    <string name="seleccionar_camara">Hacer una foto</string>
+    <string name="seleccionar_foto">Seleccionar una foto</string>
+    <string name="eliminar_imagen">Eliminar imagen</string>
+    <string name="permisos_son_necesarios_app">Los permisos son necesarios para poder usar la aplicación</string>
+    <string name="permisos_aceptados">Permisos aceptados</string>
+    <string name="permisos_denegados">Permisos denegados</string>
+
+    <string name="crear_evento">Crear evento</string>
+    <string name="editar_evento">Editar evento</string>
+    <string name="introduzca_localizacion_evento">Introduzca localización del evento</string>
+    <string name="introduzca_nombre_evento">Introduzca el nombre del evento</string>
+    <string name="introduzca_lugar_evento">Introduzca el establecimiento o lugar del evento</string>
+    <string name="introduzca_descripcion_evento">Introduzca la descripcion del evento</string>
+    <string name="introduzca_fecha_inicio_evento">Introduzca la fecha de inicio del evento</string>
+    <string name="introduzca_fecha_fin_evento">Introduzca la fecha de fin del evento</string>
+    <string name="fecha_inicio_anterior_actual">La fecha inicio del evento no puede ser anterior a la fecha actual</string>
+    <string name="fecha_fin_anterior_fecha_inicio">La fecha fin del evento no puede ser anterior a la fecha inicio</string>
+    <string name="selecciona_imagen_evento">Selecciona una imagen para el evento</string>
+    <string name="desea_eliminar_evento">¿Está seguro que desea eliminar el evento?</string>
+
+    <string name="crear_promocion">Crear promoción</string>
+    <string name="editar_promocion">Editar promoción</string>
+    <string name="introduzca_nombre_promocion">Introduzca el nombre de la promoción</string>
+    <string name="introduzca_descripcion_promocion">Introduzca la descripcion de la promoción</string>
+    <string name="selecciona_imagen_promocion">Selecciona una imagen para la promoción</string>
+    <string name="desea_eliminar_promocion">¿Está seguro que desea eliminar la promoción? Se eliminará también de los eventos a los que esté asociada.</string>
+
+    <string name="Enero">Ene</string>
+    <string name="Febrero">Feb</string>
+    <string name="Marzo">Mar</string>
+    <string name="Abril">Abr</string>
+    <string name="Mayo">May</string>
+    <string name="Junio">Jun</string>
+    <string name="Julio">Jul</string>
+    <string name="Agosto">Ago</string>
+    <string name="Septiembre">Sep</string>
+    <string name="Octubre">Oct</string>
+    <string name="Noviembre">Nov</string>
+    <string name="Diciembre">Dic</string>
+
+    <string name="cargando_promociones">Cargando promociones...</string>
+    <string name="promociones_del_evento">PROMOCIONES DEL EVENTO</string>
+    <string name="evento_sin_promociones">Este evento no tiene promociones</string>
+    <string name="error_cargar_promociones">Error al cargar promociones.</string>
+    <string name="cargando_asistentes">Cargando asistentes...</string>
+    <string name="asistentes_del_evento">ASISTENTES</string>
+    <string name="evento_sin_asistentes">De momento no hay asistentes. Sé el primero!</string>
+    <string name="error_cargar_asistentes">Error al cargar asistentes.</string>
+    <string name="cargando_imagenes_anteriores">Cargando imágenes de ediciones anteriores...</string>
+    <string name="imagenes_anteriores_del_evento">IMÁGENES DE EDICIONES ANTERIORES</string>
+    <string name="evento_sin_imagenes_anteriores">Este evento no tiene imágenes de otras ediciones</string>
+    <string name="error_cargar_imagenes_anteriores">Error al cargar imágenes anteriores.</string>
+    <string name="asistir">Asistir</string>
+    <string name="no_asistir">No Asistir</string>
+    <string name="creado_por">Creado por</string>
+
+    <string name="eliminar_cuenta">Eliminar cuenta</string>
+    <string name="desea_eliminar_cuenta">Se eliminarán todos tus datos si continúa con esta acción. ¿Está seguro que quiere darse de baja?</string>
+
+    <string name="ubicacion_desconocida">Ubicación desconocida. Lo sentimos</string>
+    <string name="introduzca_localizacion_origen">Introduzca localización de origen</string>
+    <string name="introduzca_localizacion_destino">Introduzca localización de destino</string>
+    <string name="reintentelo_de_nuevo">Reinténtelo de nuevo</string>
+    <string name="ubicacion_del_evento">Ubicación del evento</string>
+    <string name="buscando_ruta">Buscando ruta</string>
+
+    <string name="seleccionar_promociones">Seleccionar Promociones</string>
+
+    <string name="nombre">Nombre</string>
+    <string name="descripcion">Descripción</string>
+    <string name="establecimiento_lugar">Establecimiento o Lugar</string>
+    <string name="direccion">Dirección</string>
+    <string name="direccion_evento">Dirección del evento</string>
+    <string name="fecha_inicio">Fecha de inicio</string>
+    <string name="fecha_fin">Fecha de fin</string>
+    <string name="cartel">Cartel</string>
+    <string name="imagenes_anteriores_evento">Imágenes del evento en ediciones anteriores</string>
+    <string name="error_asociar_promociones">Error al asociar alguna promoción. Inténtelo de nuevo más tarde</string>
+    <string name="error_asociar_imagenes_anteriores">Error al asociar alguna imagen de ediciones anteriores. Inténtelo de nuevo más tarde</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="imagen">Imagen</string>
+    <string name="descripcion_mayusculas">DESCRIPCIÓN</string>
+    <string name="como_llegar">Cómo llegar</string>
+    <string name="salir">Salir</string>
+    <string name="recargue_de_nuevo">Recargue de nuevo</string>
+    <string name="no_asistes_a_eventos">No asistes a ningún evento. Anímate!</string>
+    <string name="no_hay_eventos_creados">No has creado ningún evento.</string>
+    <string name="no_hay_promociones_creadas">No has creado ninguna promoción.</string>
+    <string name="fecha">Fecha</string>
+    <string name="distancia">Distancia</string>
+    <string name="no_hay_eventos">No hay eventos</string>
+    <string name="inicio_mayusculas">INICIO</string>
+
+    <string name="en">En</string>
+    <string name="hasta_el">Hasta el</string>
+    <string name="hasta">Hasta</string>
+    <string name="de">de</string>
+    <string name="del">del</string>
+    <string name="a_las">a las</string>
+
+</resources>

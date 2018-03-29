@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="es.esy.pruebaappluis.cityme.Activities_Fragments.DescripcionEvento">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <net.opacapp.multilinecollapsingtoolbar.CollapsingToolbarLayout
+            android:id="@+id/collapse_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleTextAppearance="@style/titleCollapsingToolbarLayout"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:maxLines="3">
+
+            <es.esy.pruebaappluis.cityme.Utilities.TouchImageView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.6"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax" />
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnEditar"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/edit" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+
+        </net.opacapp.multilinecollapsingtoolbar.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/fechas_usuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingTop="10dp">
+
+                        <RelativeLayout
+                            android:id="@+id/fechas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_toLeftOf="@+id/linea"
+                            android:paddingLeft="15dp">
+
+                            <TextView
+                                android:id="@+id/fechaInicio"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="@color/colorDarkGrey"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/fechaFin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/fechaInicio"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="#9E9E9E"
+                                android:textSize="10sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/fechas"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toLeftOf="@+id/linea">
+
+                            <Button
+                                android:id="@+id/btnAsistencia"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="@drawable/btn_asistencia"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="..."
+                                android:textColor="@color/white"
+                                android:textSize="12dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/linea"
+                            android:layout_width="2dp"
+                            android:layout_height="83dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/informacionUsuarioCreador"
+                            android:background="#9E9E9E" />
+
+                        <RelativeLayout
+                            android:id="@+id/informacionUsuarioCreador"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp">
+
+                            <TextView
+                                android:id="@+id/creadoPor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="@string/creado_por"
+                                android:fontFamily="sans-serif-medium"
+                                android:paddingTop="3dp"
+                                android:textColor="@color/colorDarkGrey"
+                                android:textSize="8sp"
+                                android:layout_marginBottom="5dp"/>
+
+                            <ImageView
+                                android:id="@+id/imageViewCreadorEvento"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_below="@+id/creadoPor"
+                                android:layout_centerHorizontal="true"
+                                app:srcCompat="@drawable/com_facebook_profile_picture_blank_portrait" />
+
+                            <TextView
+                                android:id="@+id/textViewNombreCreadorEvento"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/imageViewCreadorEvento"
+                                android:layout_centerHorizontal="true"
+                                android:fontFamily="sans-serif-medium"
+                                android:paddingTop="5dp"
+                                android:text="TextView"
+                                android:textColor="@color/colorDarkGrey"
+                                android:textSize="8sp" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/separador1"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_below="@+id/fechas_usuario"
+                        android:background="@color/colorLightGrey" />
+
+                    <LinearLayout
+                        android:id="@+id/mapa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/separador1"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lugar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="15dp"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/localizacion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="0dp"
+                            android:textColor="@color/colorDarkGrey"
+                            android:textSize="10sp" />
+
+                        <ImageButton
+                            android:id="@+id/map"
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            android:layout_weight="0.93"
+                            app:srcCompat="@mipmap/ic_launcher" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/separador2"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_below="@+id/mapa"
+                        android:background="@color/colorLightGrey" />
+
+                    <LinearLayout
+                        android:id="@+id/informacionDescripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/separador2"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:padding="10dp"
+                            android:text="@string/descripcion_mayusculas"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/descripcion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-regular"
+                            android:padding="10dp"
+                            android:textColor="@color/colorDarkGrey"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/separador3"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_below="@+id/informacionDescripcion"
+                        android:background="@color/colorLightGrey" />
+
+                    <LinearLayout
+                        android:id="@+id/imagenes_anteriores"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/separador3"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/indicadorImagenesAnteriores"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:padding="10dp"
+                            android:text="..."
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerViewImagenesAnteriores"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginBottom="5dp"
+                            android:background="#FFFFFF" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/separador4"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_below="@+id/imagenes_anteriores"
+                        android:background="@color/colorLightGrey" />
+
+                    <LinearLayout
+                        android:id="@+id/asistentes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/separador4"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/indicadorAsistentes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:padding="10dp"
+                            android:text="..."
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerViewAsistentes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginBottom="5dp"
+                            android:background="#FFFFFF" />
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/separador5"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_below="@+id/asistentes"
+                        android:background="@color/colorLightGrey" />
+
+                    <LinearLayout
+                        android:id="@+id/promociones"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/separador5"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/indicadorPromociones"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:padding="10dp"
+                            android:text="..."
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerViewPromociones"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginBottom="5dp"
+                            android:background="#FFFFFF" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</android.support.design.widget.CoordinatorLayout>

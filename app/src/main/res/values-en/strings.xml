@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CityMe</string>
+
+    <string name="facebook_app_id">1802752153299350</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="normal">Normal</string>
+    <string name="satelite">Satellite</string>
+    <string name="hibrido">Hybrid</string>
+    <string name="tierra">Terrain</string>
+
+    <string name="login">Login with Facebook</string>
+    <string name="inicio">Home</string>
+    <string name="eventos">Events</string>
+    <string name="promociones">Offers</string>
+    <string name="calendario">Calendar</string>
+    <string name="creador">Maker</string>
+    <string name="configuracion">Settings</string>
+
+    <string name="necesaria_conexion">You need an Internet Connection</string>
+    <string name="error_conexion">Connection Error. Try again.</string>
+    <string name="cargando">Loading...</string>
+    <string name="por_favor_espere">Please wait...</string>
+    <string name="confirmacion">Confirmation</string>
+    <string name="aceptar">OK</string>
+    <string name="cancelar">Cancel</string>
+    <string name="seleccionar_galeria">Select from galery</string>
+    <string name="seleccionar_camara">Take a picture</string>
+    <string name="seleccionar_foto">Select a picture</string>
+    <string name="eliminar_imagen">Delete picture</string>
+    <string name="permisos_son_necesarios_app">Allows CityMe to access some phone data like ubication or gallery</string>
+    <string name="permisos_aceptados">Your permission has been accepted</string>
+    <string name="permisos_denegados">Yor permission has been denied</string>
+
+    <string name="crear_evento">Create Event</string>
+    <string name="editar_evento">Edit Event</string>
+    <string name="introduzca_localizacion_evento">Enter the event localization</string>
+    <string name="introduzca_nombre_evento">Enter the event´s name</string>
+    <string name="introduzca_lugar_evento">Enter the event establishment or location</string>
+    <string name="introduzca_descripcion_evento">Enter description</string>
+    <string name="introduzca_fecha_inicio_evento">Enter the start date</string>
+    <string name="introduzca_fecha_fin_evento">Enter the end date</string>
+    <string name="fecha_inicio_anterior_actual">The start date can´t be earlier than current date</string>
+    <string name="fecha_fin_anterior_fecha_inicio">The end date can´t be earlier than start date</string>
+    <string name="selecciona_imagen_evento">Select an event picture</string>
+    <string name="desea_eliminar_evento">Are you sure you want to delete the event?</string>
+    <string name="crear_promocion">Create Offer</string>
+    <string name="editar_promocion">Edit Offer</string>
+    <string name="introduzca_nombre_promocion">Enter the offer name</string>
+    <string name="introduzca_descripcion_promocion">Enter the offer description</string>
+    <string name="selecciona_imagen_promocion">Select an offer picture</string>
+    <string name="desea_eliminar_promocion">Are you sure you want to delete the offer? It will be removed from the events to which it is associated as well.</string>
+
+    <string name="Enero">Jan</string>
+    <string name="Febrero">Feb</string>
+    <string name="Marzo">Mar</string>
+    <string name="Abril">Apr</string>
+    <string name="Mayo">May</string>
+    <string name="Junio">Jun</string>
+    <string name="Julio">Jul</string>
+    <string name="Agosto">Ago</string>
+    <string name="Septiembre">Sep</string>
+    <string name="Octubre">Oct</string>
+    <string name="Noviembre">Nov</string>
+    <string name="Diciembre">Dec</string>
+
+    <string name="cargando_promociones">Loading offers...</string>
+    <string name="promociones_del_evento">EVENT´S OFFERS</string>
+    <string name="evento_sin_promociones">This event has not offers</string>
+    <string name="error_cargar_promociones">Offers loading error.</string>
+    <string name="cargando_asistentes">Loading assistants...</string>
+    <string name="asistentes_del_evento">ASSISTANTS</string>
+    <string name="evento_sin_asistentes">At this moment there are no assistants. Be the first!</string>
+    <string name="error_cargar_asistentes">Assistants loading error.</string>
+    <string name="cargando_imagenes_anteriores">Loading images from previous editions...</string>
+    <string name="imagenes_anteriores_del_evento">IMAGES FROM PREVIOUS EDITIONS</string>
+    <string name="evento_sin_imagenes_anteriores">This events has no images from other editions</string>
+    <string name="error_cargar_imagenes_anteriores">Error loading previous images</string>
+    <string name="asistir">Attend</string>
+    <string name="no_asistir">Not Attending</string>
+    <string name="creado_por">Created by</string>
+
+    <string name="eliminar_cuenta">Delete Account</string>
+    <string name="desea_eliminar_cuenta">All your data will be deleted if you continue with this action. Are you sure you want to unsubscribe?</string>
+
+    <string name="ubicacion_desconocida">Unknown location, sorry</string>
+    <string name="introduzca_localizacion_origen">Enter location of origin</string>
+    <string name="introduzca_localizacion_destino">Enter destination location</string>
+    <string name="reintentelo_de_nuevo">Try again</string>
+    <string name="ubicacion_del_evento">Event location</string>
+    <string name="buscando_ruta">Looking for route</string>
+
+    <string name="seleccionar_promociones">Select offers</string>
+
+    <string name="nombre">Name</string>
+    <string name="descripcion">Description</string>
+    <string name="establecimiento_lugar">Establishment or location</string>
+    <string name="direccion">Address</string>
+    <string name="direccion_evento">Event Address</string>
+    <string name="fecha_inicio">Start Date</string>
+    <string name="fecha_fin">End date</string>
+    <string name="cartel">Event poster</string>
+    <string name="imagenes_anteriores_evento">Images of the event in previous editions</string>
+    <string name="error_asociar_promociones">Failed to associate an offer. Please try again later</string>
+    <string name="error_asociar_imagenes_anteriores">Error associating some image from previous issues. Try it again later</string>
+    <string name="eliminar">Delete</string>
+    <string name="imagen">Image</string>
+    <string name="descripcion_mayusculas">DESCRIPTIÓN</string>
+    <string name="como_llegar">How to arrive</string>
+    <string name="salir">Log Out</string>
+    <string name="recargue_de_nuevo">Reload</string>
+    <string name="no_asistes_a_eventos">You do not attend any events. Let´s do!</string>
+    <string name="no_hay_eventos_creados">You have not created any events.</string>
+    <string name="no_hay_promociones_creadas">You have not created any offer.</string>
+    <string name="fecha">Date</string>
+    <string name="distancia">Distance</string>
+    <string name="no_hay_eventos">No Events.</string>
+    <string name="inicio_mayusculas">START</string>
+
+    <string name="en">In</string>
+    <string name="hasta_el">Until</string>
+    <string name="hasta">Until</string>
+    <string name="de">of</string>
+    <string name="del">of</string>
+    <string name="a_las">at</string>
+
+</resources>

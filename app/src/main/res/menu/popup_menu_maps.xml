@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_mapa_nomal"
+        android:title="@string/normal"
+        android:visible="true"/>
+    <item
+        android:id="@+id/item_mapa_satelite"
+        android:title="@string/satelite"
+        android:visible="true"/>
+    <item
+        android:id="@+id/item_mapa_hibrido"
+        android:title="@string/hibrido"
+        android:visible="true"/>
+    <item
+        android:id="@+id/item_mapa_tierra"
+        android:title="@string/tierra"
+        android:visible="true"/>
+
+</menu>
